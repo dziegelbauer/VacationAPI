@@ -22,6 +22,7 @@ public class CheckoutServiceImpl implements CheckoutService {
     @Override
     @Transactional
     public PurchaseResponse placeOrder(Purchase purchase) {
+        // Input validation here
         if(purchase.getCustomer() == null
             || purchase.getCart() == null
             || purchase.getCartItems() == null
